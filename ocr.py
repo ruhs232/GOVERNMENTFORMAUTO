@@ -13,8 +13,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Roboflow Client
 CLIENT = InferenceHTTPClient(
-    api_url="https://detect.roboflow.com",
-    api_key="i0ugmlchLJbER91K6IjS"
+
 )
 
 # EasyOCR Reader
