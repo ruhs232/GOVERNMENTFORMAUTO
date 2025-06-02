@@ -6,11 +6,7 @@ from google.cloud import documentai_v1 as documentai
 from living_certificate_parser import parse_living_certificate_text
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "docai-460614-2c271e90ff8a.json"
-PROJECT_ID   = "844875745491"
-LOCATION     = "us"
-PROCESSOR_ID = "e8ccf7eeea048b92"
-PROCESSOR_NAME = f"projects/{PROJECT_ID}/locations/{LOCATION}/processors/{PROCESSOR_ID}"
+
 # ────────────────────────────────────────────────────────────────────────────────
 
 def extract_text_from_document(file_path: str) -> dict:
